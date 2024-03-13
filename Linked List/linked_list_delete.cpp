@@ -38,6 +38,7 @@ void deleteNode(Node* &head,int data){
     // deleting first node
     if(temp->data == data){
         head = head->next;
+        temp->next = NULL;
         return;
     }
 
@@ -47,7 +48,7 @@ void deleteNode(Node* &head,int data){
         temp = temp->next;
     }
     prev->next = temp->next;
-    temp = NULL;
+    prev->next = NULL;
 }
 
 int main()
