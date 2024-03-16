@@ -66,10 +66,12 @@ void deleteNode(Node* &head,int data){
 void printNode(Node* &head){
     Node* temp = head;
 
+    cout<<"NULL ";
     while(temp != NULL){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
+    cout<<"NULL";
 }
 
 int main()

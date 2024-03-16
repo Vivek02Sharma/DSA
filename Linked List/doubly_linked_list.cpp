@@ -32,10 +32,12 @@ void insert(Node* &head, int data){
 void printNode(Node* &head){
     Node* temp = head;
 
+    cout<<"NULL ";
     while(temp != NULL){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
+    cout<<"NULL";
 }
 
 int main()
@@ -48,9 +50,6 @@ int main()
     
     printNode(head);
     cout<<endl;
-
-    cout<<"prev : "<<head->prev<<endl;
-    cout<<"next : "<<head->next<<endl;
 
     cout<<"head : "<<head->data;
     return 0;
