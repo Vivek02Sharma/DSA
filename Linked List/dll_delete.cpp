@@ -13,7 +13,7 @@ class Node{
     }
 
     ~Node(){
-        cout<<"Deleting node of data : "<<data<<endl;
+        cout<<"Deleting node with data : "<<data<<endl;
 
         if(next != NULL){
             delete next;
