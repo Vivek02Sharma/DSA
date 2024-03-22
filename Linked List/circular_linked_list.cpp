@@ -65,6 +65,7 @@ int main()
     Node *tail = n;
 
     printCircularNode(tail);
+    cout<<"tail : "<<tail->data<<endl;
 
     insertCircularNode(tail, 2);
     insertCircularNode(tail, 3);
@@ -72,6 +73,7 @@ int main()
     insertCircularNode(tail, 5);
 
     printCircularNode(tail);
+    cout<<"tail : "<<tail->data<<endl;
 
     return 0;
 }
